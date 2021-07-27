@@ -3,6 +3,13 @@
 /** % is always with respect to its parent (eg width %) but vh and vw is always with respect to viewports height and viewports width **/
 /** 2 em is double the size of parents font and 2 rem is double the size of html(root) font **/
 /** 2 em and 200% both is with respect to its parent **/
+
+div
+{
+    width:100vw;
+    height:100vh;
+}
+
 body
 {
     /** text-align: center is used when u want to align elements in the centre but when width is changed then use margin:0 auto; to centre them**/
