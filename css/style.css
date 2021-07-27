@@ -1,0 +1,289 @@
+/** font size set to pixel will be static but % will be dynamic. So when you go to preferences and set your font sizeto small the percentage i.e dynamic will manage according to your preferences but the pixel i.e. static will have no effect and its size will remain same even if you set font-size (small) to it. **/
+/** root element is html so rem will always be x times the html(roots) font size **/
+/** % is always with respect to its parent (eg width %) but vh and vw is always with respect to viewports height and viewports width **/
+/** 2 em is double the size of parents font and 2 rem is double the size of html(root) font **/
+/** 2 em and 200% both is with respect to its parent **/
+body
+{
+    /** text-align: center is used when u want to align elements in the centre but when width is changed then use margin:0 auto; to centre them**/
+    
+    font: #40514E;
+    text-align:center;
+    background-color:#e6f7f8;
+    font-family: 'Merriweather', serif;
+    margin:0px;
+}
+h1{
+    width:10%;
+    /*margin doesnt mean from the body. if there is a middle container(div) then its margin will be from the element which is before it(top-container) not the body*/
+    /* whereas position:absolute top:0 will make the middle container(div) to be on top of the screen inspite of top-container because margin-top(application on previous code line) and position:absolute top:0 is different*/
+    /* position:absolute makes the element "appear" on the top and there is nothing to do with z-index */
+    /*but if top middle and bottom all are positioned absolute then the code which comes last will appear on top of other(like children sit on parents) also if all are mentioned relative then still code below will sit on top*/
+
+    
+    margin: 0 auto;
+    font-family: 'Sacramento', cursive;
+    color:#1d9b9b;
+    line-height: 2;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom:10px;
+    
+    
+}
+.hello
+{
+    color:#0bb698e6;
+    font: height 3px;
+    font-family: 'Permanent Marker', cursive;
+}
+.skil{
+color:#1f6561f5;
+font-family: 'Otomanopee One', sans-serif;
+}
+h3
+{
+    font-family: 'Montserrat', sans-serif;
+    color:#11999E
+}
+.skill1
+{
+color:black;
+font-family: 'Prata', serif;
+margin-right: 226px;
+    margin-top: 82px;
+
+
+}
+.skill2
+{
+color:#1f0909;
+
+}
+p
+{
+    line-height:2;
+}
+hr{
+    border-style: none;
+    display:inline-block;
+    border:dotted 6px white;
+    border-bottom:none;
+    width:4%;
+    margin:100px auto;
+}
+.girl
+{
+/*position absolute will be always relative to its nearest postioned ancestor i.e. its positioned parent*/
+/* relative positioned element appears on the top of any static positioned element */
+position: absolute;
+    left: 452px;
+    top: 215px;
+}
+
+.window
+{
+    height: 154px;
+    width: 155px;
+    position: absolute;
+    right: 79px;
+    top: 92px;
+}
+.frame
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 175px;
+    top: 168px;
+}
+.flowervase
+{
+    position: absolute;
+    height: 75px;
+    left: 535px;
+    top: 269px;
+    width: 84px;
+}
+.btn {
+    
+    background: #fa61d9;
+    background-image: -webkit-linear-gradient(top, #3cfcf2, #2382c2);
+    background-image: -moz-linear-gradient(top, #3cfcf2, #2382c2);
+    background-image: -ms-linear-gradient(top, #3cfcf2, #2382c2);
+    background-image: -o-linear-gradient(top, #3cfcf2, #2382c2);
+    background-image: linear-gradient(to bottom, #3cfcf2, #2382c2);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Otomanopee One', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    top: -61px;
+    left: 57px;
+    padding: 2px 5px 4px 7px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #3cfcf2;
+    
+    background-image: -webkit-linear-gradient(top, #1fd4c5, #12a399);
+    background-image: -moz-linear-gradient(top, #1fd4c5, #12a399);
+    background-image: -ms-linear-gradient(top, #1fd4c5, #12a399);
+    background-image: -o-linear-gradient(top, #1fd4c5, #12a399);
+    background-image: linear-gradient(to bottom,#1fd4c5, #12a399);
+    text-decoration: none;
+  }
+/*
+.mirror
+{
+    position:absolute;
+    left: 224px;
+    top: 183px;
+}*/
+.table
+{
+    position: absolute;
+    left: 386px;
+    top: 299px;
+    
+    z-index: -1;
+    height: 211px;
+    width: 230px;
+}
+
+.dog
+{
+    
+    position: absolute;
+    height: 100px;
+    /* z-index is used for bringing object front and end. below z-index +73 is used */
+    z-index: +73;
+    width: 110px;
+    left: 400px;
+    top: 356px;
+}
+
+.laptop
+{
+    height: 91px;
+    width: 100px;
+    position: absolute;
+    left: 430px;
+    top: 264px;
+    z-index: +1;
+}
+.chair
+{
+    position: absolute;
+    height: 212px;
+    z-index: -1;
+    width: 134px;
+    left: 430px;
+    top: 235px;
+    z-index: -10;
+}
+.legs
+{
+    height: 124px;
+    width: 100px;
+    position: absolute;
+    left: 443px;
+    top: 330px;
+    z-index: -1;
+}
+/*
+.top-container
+{
+    position: relative;
+    top: 376px;
+}
+*/
+.top-container
+{
+    margin: 384px auto -100px;
+    
+    padding-top: 20px;
+
+    padding-bottom: 1px; 
+    background-color: rgb(147 232 220 / 54%);
+   /* background-color:rgb(16,240,209);*/
+   /* background-color: rgb(156, 226, 238);*/
+}
+.middle-container
+{
+    background-color: #1ce08570;
+    margin:100px auto;
+    margin-bottom: -13px;
+    padding-bottom: 47px;
+    
+}
+.pre-bottom-container
+{
+    margin-top: 12px;
+    padding-top: 33px;
+    
+    background-color: #3aa679b3;
+    
+}
+.bottom-container
+{
+    margin:0px auto;
+    background-color: rgb(23 99 111);
+    color:white;
+
+}
+.intro
+{
+/*width 40% beacuse if you dont want your text to appear in a continous big line. */ 
+width:40%;
+margin:auto;
+/**font weight - how bold your text are**/
+
+}
+.weight
+{
+    font-weight:normal;
+}
+.skills
+{
+    
+width:27%;
+margin: auto;
+}
+a
+{
+    
+    margin:0 4px;
+    color:#67b4b7;
+}
+.imgsk2
+{
+float:left;
+margin-left:27px;
+clear:right;/**Clear anything which is floating on right that means dont wrap around the right floating element **/
+
+
+}
+.imgsk1
+{
+float:right;
+clear:left;
+
+margin-right: 27px;
+}
+.skill1pos
+{
+    margin-left: 393px;
+    margin-bottom: 1px;}
+a{
+    color:turquoise;
+        text-decoration: none;
+    }
+    a:hover{
+        color:white;
+    }
+    
