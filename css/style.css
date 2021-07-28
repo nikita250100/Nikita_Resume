@@ -1,14 +1,9 @@
+
 /** font size set to pixel will be static but % will be dynamic. So when you go to preferences and set your font sizeto small the percentage i.e dynamic will manage according to your preferences but the pixel i.e. static will have no effect and its size will remain same even if you set font-size (small) to it. **/
 /** root element is html so rem will always be x times the html(roots) font size **/
 /** % is always with respect to its parent (eg width %) but vh and vw is always with respect to viewports height and viewports width **/
 /** 2 em is double the size of parents font and 2 rem is double the size of html(root) font **/
 /** 2 em and 200% both is with respect to its parent **/
-
-div
-{
-    width:100vw;
-    
-}
 
 body
 {
@@ -131,9 +126,8 @@ position: absolute;
     font-family: 'Otomanopee One', sans-serif;
     color: #ffffff;
     font-size: 20px;
-    position: relative;
-    top: -61px;
-    left: 77px;
+    position: absolute;
+    left:44%px;
     padding: 2px 5px 4px 7px;
     text-decoration: none;
   }
@@ -214,8 +208,8 @@ position: absolute;
 }
 */
 .top-container
-{
-    margin: 484px auto -100px;
+{   
+    margin: 484px 0px -100px;
     
     padding-top: 20px;
 
@@ -229,8 +223,9 @@ position: absolute;
     background-color: #1ce08570;
     margin:100px auto;
     margin-bottom: -13px;
-    padding-bottom: 47px;
-    
+    padding-bottom: 416px;
+    padding-top:259px;
+    position: relative; 
 }
 .pre-bottom-container
 {
@@ -261,7 +256,7 @@ margin:auto;
 }
 .skills
 {
-    
+   
 width:27%;
 margin: auto;
 }
@@ -273,9 +268,10 @@ a
 }
 .imgsk2
 {
-    position:relative;
-    top:-100px;
-float:left;
+    position: relative;
+    top: -30%;
+    left: 1%;
+    float:left;
 margin-left:57px;
 clear:right;/**Clear anything which is floating on right that means dont wrap around the right floating element **/
 
@@ -286,7 +282,9 @@ clear:right;/**Clear anything which is floating on right that means dont wrap ar
 float:right;
 clear:left;
 
-margin-right: 37px;
+
+position:relative;
+left:-3%;
 }
 .skill1pos
 {
