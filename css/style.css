@@ -53,8 +53,6 @@ h3
 {
 color:black;
 font-family: 'Prata', serif;
-margin-right: 226px;
-    margin-top: 82px;
 
 
 }
@@ -254,11 +252,14 @@ margin:auto;
 {
     font-weight:normal;
 }
-.skills
+
+width1
 {
-   
-width:27%;
-margin: auto;
+width:30%;
+}
+width2
+{
+width:30%;
 }
 a
 {
@@ -268,9 +269,6 @@ a
 }
 .imgsk2
 {
-    position: relative;
-    top: -30%;
-    left: 1%;
     float:left;
 margin-left:57px;
 clear:right;/**Clear anything which is floating on right that means dont wrap around the right floating element **/
@@ -283,8 +281,6 @@ float:right;
 clear:left;
 
 
-position:relative;
-left:-3%;
 }
 .skill1pos
 {
