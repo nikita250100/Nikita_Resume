@@ -269,6 +269,7 @@ a
 }
 .imgsk2
 {
+margin-top:5%;
     float:left;
 margin-left:57px;
 clear:right;/**Clear anything which is floating on right that means dont wrap around the right floating element **/
